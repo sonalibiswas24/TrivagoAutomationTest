@@ -2,14 +2,14 @@
   "stats": {
     "suites": 6,
     "tests": 4,
-    "passes": 3,
+    "passes": 4,
     "pending": 0,
-    "failures": 1,
-    "start": "2020-08-17T14:29:18.877Z",
-    "end": "2020-08-17T14:29:58.143Z",
-    "duration": 39266,
+    "failures": 0,
+    "start": "2020-08-17T16:15:25.774Z",
+    "end": "2020-08-17T16:16:13.639Z",
+    "duration": 47865,
     "testsRegistered": 4,
-    "passPercent": 75,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0062c728-ba1c-415e-9ef2-aa48b74be523",
+      "uuid": "e13b0962-ace4-4851-8efe-c74ff7f671c9",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4eed0d0c-cb64-4346-ac08-046ad8d949ba",
+          "uuid": "3d1c4728-e8b1-45e8-8323-aab8d1659bf8",
           "title": "Trivago Magazine Test Suite",
           "fullFile": "/Users/sonalij/Documents/__Projects/Automation/TrivagoAutomationTest/src/index.js",
           "file": "/src/index.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook",
               "fullTitle": "Trivago Magazine Test Suite \"before all\" hook",
               "timedOut": false,
-              "duration": 6592,
+              "duration": 6647,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "// options if necessary (i.e. firefox.Options or chrome.Options)).\ndriver = await new _seleniumWebdriver.Builder().forBrowser('chrome').build();",
               "err": {},
-              "uuid": "f691bb4d-1d8c-40ed-a673-ef1c6604212e",
-              "parentUUID": "4eed0d0c-cb64-4346-ac08-046ad8d949ba",
+              "uuid": "ea43810b-770a-4e24-9267-156b7c9b198a",
+              "parentUUID": "3d1c4728-e8b1-45e8-8323-aab8d1659bf8",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook",
               "fullTitle": "Trivago Magazine Test Suite \"after all\" hook",
               "timedOut": false,
-              "duration": 122,
+              "duration": 157,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "return driver && driver.quit();",
               "err": {},
-              "uuid": "26884e4e-8139-4af8-99b3-bf88ad47b44e",
-              "parentUUID": "4eed0d0c-cb64-4346-ac08-046ad8d949ba",
+              "uuid": "17fcde03-b3f8-46ec-8946-8612b7ce0f48",
+              "parentUUID": "3d1c4728-e8b1-45e8-8323-aab8d1659bf8",
               "isHook": true,
               "skipped": false
             }
@@ -74,7 +74,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "46fa9d3c-52a6-4748-9513-28a473e32186",
+              "uuid": "09e740e7-65bb-4b54-9e67-fe82fecd686f",
               "title": "Smoke Tests package flow",
               "fullFile": "/Users/sonalij/Documents/__Projects/Automation/TrivagoAutomationTest/src/index.js",
               "file": "/src/index.js",
@@ -83,7 +83,7 @@
               "tests": [],
               "suites": [
                 {
-                  "uuid": "30affd2a-bf61-4fc8-944d-b0aa40d9c03a",
+                  "uuid": "c0a802cd-4dc8-439b-9c21-010843dd586e",
                   "title": "Open Trivago URL",
                   "fullFile": "/Users/sonalij/Documents/__Projects/Automation/TrivagoAutomationTest/src/index.js",
                   "file": "/src/index.js",
@@ -94,7 +94,7 @@
                       "title": "User should be able to open the URL",
                       "fullTitle": "Trivago Magazine Test Suite Smoke Tests package flow Open Trivago URL User should be able to open the URL",
                       "timedOut": false,
-                      "duration": 4746,
+                      "duration": 3636,
                       "state": "passed",
                       "speed": "slow",
                       "pass": true,
@@ -103,26 +103,26 @@
                       "context": null,
                       "code": "driver.get(_constants.Constants.LOGIN_URL);\nawait driver.manage().window().maximize();",
                       "err": {},
-                      "uuid": "7bd49560-3bf2-4cdf-a01b-bad0358d8ff6",
-                      "parentUUID": "30affd2a-bf61-4fc8-944d-b0aa40d9c03a",
+                      "uuid": "69a3438d-a1e1-44f2-ace5-03025319f64f",
+                      "parentUUID": "c0a802cd-4dc8-439b-9c21-010843dd586e",
                       "isHook": false,
                       "skipped": false
                     }
                   ],
                   "suites": [],
                   "passes": [
-                    "7bd49560-3bf2-4cdf-a01b-bad0358d8ff6"
+                    "69a3438d-a1e1-44f2-ace5-03025319f64f"
                   ],
                   "failures": [],
                   "pending": [],
                   "skipped": [],
-                  "duration": 4746,
+                  "duration": 3636,
                   "root": false,
                   "rootEmpty": false,
                   "_timeout": 3000000
                 },
                 {
-                  "uuid": "5803bd5a-31b2-4fc8-85b2-d54a09322df7",
+                  "uuid": "a0b1d1ba-bef2-4592-9d9b-2d0aaa7dc98a",
                   "title": "Search for any location on Magazine by using the search bar",
                   "fullFile": "/Users/sonalij/Documents/__Projects/Automation/TrivagoAutomationTest/src/index.js",
                   "file": "/src/index.js",
@@ -133,7 +133,7 @@
                       "title": "User should be able to search the location",
                       "fullTitle": "Trivago Magazine Test Suite Smoke Tests package flow Search for any location on Magazine by using the search bar User should be able to search the location",
                       "timedOut": false,
-                      "duration": 11819,
+                      "duration": 11555,
                       "state": "passed",
                       "speed": "slow",
                       "pass": true,
@@ -142,26 +142,26 @@
                       "context": null,
                       "code": "await driver.findElement(_seleniumWebdriver.By.className('search-icon')).click();\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.className('search-input')).sendKeys(_constants.Constants.SEARCH_INPUT);\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.xpath('//*[@id=\"header\"]/div/div/div[2]')).click();\nawait driver.sleep(5000);",
                       "err": {},
-                      "uuid": "6b6e6cc4-52f6-4326-87e4-bce7f8699ac0",
-                      "parentUUID": "5803bd5a-31b2-4fc8-85b2-d54a09322df7",
+                      "uuid": "b2dfb8e0-63ab-455e-9bcb-21fb1488b34e",
+                      "parentUUID": "a0b1d1ba-bef2-4592-9d9b-2d0aaa7dc98a",
                       "isHook": false,
                       "skipped": false
                     }
                   ],
                   "suites": [],
                   "passes": [
-                    "6b6e6cc4-52f6-4326-87e4-bce7f8699ac0"
+                    "b2dfb8e0-63ab-455e-9bcb-21fb1488b34e"
                   ],
                   "failures": [],
                   "pending": [],
                   "skipped": [],
-                  "duration": 11819,
+                  "duration": 11555,
                   "root": false,
                   "rootEmpty": false,
                   "_timeout": 3000000
                 },
                 {
-                  "uuid": "4ffa091d-4510-4202-b856-76172cc21def",
+                  "uuid": "10783d90-2061-4e26-8b61-63ebed5865fe",
                   "title": "Subscribe to the Newsletter",
                   "fullFile": "/Users/sonalij/Documents/__Projects/Automation/TrivagoAutomationTest/src/index.js",
                   "file": "/src/index.js",
@@ -172,39 +172,35 @@
                       "title": "User should be able to Subscribe",
                       "fullTitle": "Trivago Magazine Test Suite Smoke Tests package flow Subscribe to the Newsletter User should be able to Subscribe",
                       "timedOut": false,
-                      "duration": 1097,
-                      "state": "failed",
-                      "speed": null,
-                      "pass": false,
-                      "fail": true,
+                      "duration": 11210,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
                       "pending": false,
                       "context": null,
                       "code": "await driver.findElement(_seleniumWebdriver.By.className('newsletter-email-submit')).click();\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.className('et-email')).sendKeys((0, _constants.getRandomEmailGenerator)());\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.className('submit')).click();\nawait driver.sleep(5000);",
-                      "err": {
-                        "message": "ElementClickInterceptedError: element click intercepted: Element <div class=\"newsletter-email-submit\">...</div> is not clickable at point (908, 691). Other element would receive the click: <div class=\"ot-sdk-row\">...</div>\n  (Session info: chrome=84.0.4147.125)",
-                        "estack": "ElementClickInterceptedError: element click intercepted: Element <div class=\"newsletter-email-submit\">...</div> is not clickable at point (908, 691). Other element would receive the click: <div class=\"ot-sdk-row\">...</div>\n  (Session info: chrome=84.0.4147.125)\n    at Object.throwDecodedError (node_modules/selenium-webdriver/lib/error.js:550:15)\n    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:565:13)\n    at Executor.execute (node_modules/selenium-webdriver/lib/http.js:491:26)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-                        "diff": null
-                      },
-                      "uuid": "55af3e65-f5e8-497c-8c9c-3f2fbbd02a5c",
-                      "parentUUID": "4ffa091d-4510-4202-b856-76172cc21def",
+                      "err": {},
+                      "uuid": "b5282ec6-afbc-4337-9297-593b4a67e321",
+                      "parentUUID": "10783d90-2061-4e26-8b61-63ebed5865fe",
                       "isHook": false,
                       "skipped": false
                     }
                   ],
                   "suites": [],
-                  "passes": [],
-                  "failures": [
-                    "55af3e65-f5e8-497c-8c9c-3f2fbbd02a5c"
+                  "passes": [
+                    "b5282ec6-afbc-4337-9297-593b4a67e321"
                   ],
+                  "failures": [],
                   "pending": [],
                   "skipped": [],
-                  "duration": 1097,
+                  "duration": 11210,
                   "root": false,
                   "rootEmpty": false,
                   "_timeout": 3000000
                 },
                 {
-                  "uuid": "fb795ba2-68f4-426c-ac2e-b73a70dea328",
+                  "uuid": "44ac78a6-12ec-49b8-9369-ad91c2d7d185",
                   "title": "Navigate to the destination through the top left menu",
                   "fullFile": "/Users/sonalij/Documents/__Projects/Automation/TrivagoAutomationTest/src/index.js",
                   "file": "/src/index.js",
@@ -215,29 +211,29 @@
                       "title": "User should be able to Navigate",
                       "fullTitle": "Trivago Magazine Test Suite Smoke Tests package flow Navigate to the destination through the top left menu User should be able to Navigate",
                       "timedOut": false,
-                      "duration": 14868,
+                      "duration": 14641,
                       "state": "passed",
                       "speed": "slow",
                       "pass": true,
                       "fail": false,
                       "pending": false,
                       "context": null,
-                      "code": "//await driver.executeScript(\"arguments[0].scrollIntoView(true);\", driver.findElement(By.className('nav-icon')));\nawait driver.findElement(_seleniumWebdriver.By.tagName('body')).sendKeys(_seleniumWebdriver.Key.ARROW_UP);\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.className('nav-icon')).click();\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.className('menu-title')).click();\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.xpath('//a[contains(@href,\"/destination/northwest/\")]')).click();\nawait driver.sleep(2000);",
+                      "code": "await driver.findElement(_seleniumWebdriver.By.tagName('body')).sendKeys(_seleniumWebdriver.Key.ARROW_UP);\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.className('nav-icon')).click();\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.className('menu-title')).click();\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.xpath('//a[contains(@href,\"/destination/northwest/\")]')).click();\nawait driver.sleep(2000);",
                       "err": {},
-                      "uuid": "84b93989-76f1-465d-a581-79190b023597",
-                      "parentUUID": "fb795ba2-68f4-426c-ac2e-b73a70dea328",
+                      "uuid": "cde49890-b940-423a-bd69-ff88e5a5d7e4",
+                      "parentUUID": "44ac78a6-12ec-49b8-9369-ad91c2d7d185",
                       "isHook": false,
                       "skipped": false
                     }
                   ],
                   "suites": [],
                   "passes": [
-                    "84b93989-76f1-465d-a581-79190b023597"
+                    "cde49890-b940-423a-bd69-ff88e5a5d7e4"
                   ],
                   "failures": [],
                   "pending": [],
                   "skipped": [],
-                  "duration": 14868,
+                  "duration": 14641,
                   "root": false,
                   "rootEmpty": false,
                   "_timeout": 3000000

@@ -43,7 +43,6 @@ describe('Trivago Magazine Test Suite', () => {
 
         describe('Navigate to the destination through the top left menu', () => {
             it('User should be able to Navigate', async () => {
-                //await driver.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.className('nav-icon')));
                 await driver.findElement(By.tagName('body')).sendKeys(Key.ARROW_UP);
                 await driver.sleep(3000);
                 await driver.findElement(By.className('nav-icon')).click();
@@ -54,10 +53,8 @@ describe('Trivago Magazine Test Suite', () => {
                 await driver.sleep(2000);
             });
         });
-
     });
      
-
     after(() => driver && driver.quit());
 });
 
