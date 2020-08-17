@@ -1,0 +1,291 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-08-17T13:52:33.458Z",
+    "end": "2020-08-17T13:53:18.544Z",
+    "duration": 45086,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "de32952b-1ea8-4126-a93d-0c2ae03f9dea",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9288d1d2-363d-4e94-a554-8b62833c9021",
+          "title": "Trivago Magazine Test Suite",
+          "fullFile": "/Users/sonalij/Desktop/Automation/Trivago Auto/src/index.js",
+          "file": "/src/index.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook",
+              "fullTitle": "Trivago Magazine Test Suite \"before all\" hook",
+              "timedOut": false,
+              "duration": 4144,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// options if necessary (i.e. firefox.Options or chrome.Options)).\ndriver = await new _seleniumWebdriver.Builder().forBrowser('chrome').build();",
+              "err": {},
+              "uuid": "dbcc3a24-78c0-4a0c-9906-9dac96a2ba98",
+              "parentUUID": "9288d1d2-363d-4e94-a554-8b62833c9021",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook",
+              "fullTitle": "Trivago Magazine Test Suite \"after all\" hook",
+              "timedOut": false,
+              "duration": 67,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return driver && driver.quit();",
+              "err": {},
+              "uuid": "951b6f3b-4ea0-441f-8925-e41075186ee0",
+              "parentUUID": "9288d1d2-363d-4e94-a554-8b62833c9021",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "5d295664-24f5-4676-b617-ccef096cc99c",
+              "title": "Smoke Tests package flow",
+              "fullFile": "/Users/sonalij/Desktop/Automation/Trivago Auto/src/index.js",
+              "file": "/src/index.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "40b921b3-65c6-4d52-bc26-7d64ff52dca7",
+                  "title": "Open Trivago URL",
+                  "fullFile": "/Users/sonalij/Desktop/Automation/Trivago Auto/src/index.js",
+                  "file": "/src/index.js",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "User should be able to open the URL",
+                      "fullTitle": "Trivago Magazine Test Suite Smoke Tests package flow Open Trivago URL User should be able to open the URL",
+                      "timedOut": false,
+                      "duration": 3536,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "driver.get(_constants.Constants.LOGIN_URL);\nawait driver.manage().window().maximize();",
+                      "err": {},
+                      "uuid": "2f20fe2e-f611-4b92-aa77-6b5c54c6a87c",
+                      "parentUUID": "40b921b3-65c6-4d52-bc26-7d64ff52dca7",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "2f20fe2e-f611-4b92-aa77-6b5c54c6a87c"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 3536,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 3000000
+                },
+                {
+                  "uuid": "2ffecb56-48bd-4c51-84de-850730d0be0f",
+                  "title": "Search for any location on Magazine by using the search bar",
+                  "fullFile": "/Users/sonalij/Desktop/Automation/Trivago Auto/src/index.js",
+                  "file": "/src/index.js",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "User should be able to search the location",
+                      "fullTitle": "Trivago Magazine Test Suite Smoke Tests package flow Search for any location on Magazine by using the search bar User should be able to search the location",
+                      "timedOut": false,
+                      "duration": 11520,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "await driver.findElement(_seleniumWebdriver.By.className('search-icon')).click();\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.className('search-input')).sendKeys(_constants.Constants.SEARCH_INPUT);\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.xpath('//*[@id=\"header\"]/div/div/div[2]')).click();\nawait driver.sleep(5000);",
+                      "err": {},
+                      "uuid": "0b973751-98a2-4f75-b7a3-cb2c9ba6d8e7",
+                      "parentUUID": "2ffecb56-48bd-4c51-84de-850730d0be0f",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "0b973751-98a2-4f75-b7a3-cb2c9ba6d8e7"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 11520,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 3000000
+                },
+                {
+                  "uuid": "22074f88-1daa-4ad4-abf1-5d3a625f9632",
+                  "title": "Subscribe to the Newsletter",
+                  "fullFile": "/Users/sonalij/Desktop/Automation/Trivago Auto/src/index.js",
+                  "file": "/src/index.js",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "User should be able to Subscribe",
+                      "fullTitle": "Trivago Magazine Test Suite Smoke Tests package flow Subscribe to the Newsletter User should be able to Subscribe",
+                      "timedOut": false,
+                      "duration": 11254,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "await driver.findElement(_seleniumWebdriver.By.className('newsletter-email-submit')).click();\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.className('et-email')).sendKeys((0, _constants.getRandomEmailGenerator)());\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.className('submit')).click();\nawait driver.sleep(5000);",
+                      "err": {},
+                      "uuid": "c5a8ef3b-10c1-4210-a63a-48a7568bfdd6",
+                      "parentUUID": "22074f88-1daa-4ad4-abf1-5d3a625f9632",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "c5a8ef3b-10c1-4210-a63a-48a7568bfdd6"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 11254,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 3000000
+                },
+                {
+                  "uuid": "8b3c74d2-799d-48ca-81d8-e77f5e083448",
+                  "title": "Navigate to the destination through the top left menu",
+                  "fullFile": "/Users/sonalij/Desktop/Automation/Trivago Auto/src/index.js",
+                  "file": "/src/index.js",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "User should be able to Navigate",
+                      "fullTitle": "Trivago Magazine Test Suite Smoke Tests package flow Navigate to the destination through the top left menu User should be able to Navigate",
+                      "timedOut": false,
+                      "duration": 14511,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "//await driver.executeScript(\"arguments[0].scrollIntoView(true);\", driver.findElement(By.className('nav-icon')));\nawait driver.findElement(_seleniumWebdriver.By.tagName('body')).sendKeys(_seleniumWebdriver.Key.ARROW_UP);\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.className('nav-icon')).click();\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.className('menu-title')).click();\nawait driver.sleep(3000);\nawait driver.findElement(_seleniumWebdriver.By.xpath('//a[contains(@href,\"/destination/northwest/\")]')).click();\nawait driver.sleep(2000);",
+                      "err": {},
+                      "uuid": "908c6a41-6a6e-401b-9232-7908217a97a1",
+                      "parentUUID": "8b3c74d2-799d-48ca-81d8-e77f5e083448",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "908c6a41-6a6e-401b-9232-7908217a97a1"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 14511,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 3000000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 3000000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 3000000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 3000000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.1.4"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "useInlineDiffs": false
+      },
+      "version": "4.0.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "4.0.0"
+    }
+  }
+}
